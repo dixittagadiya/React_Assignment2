@@ -1,0 +1,22 @@
+=> In class components in React, the render() method is responsible for describing what should be displayed on the user interface (UI). It is a required lifecycle method for all class components and must return a React element, which could be a JSX expression, a string, or null.
+
+=> Key Points about render():
+
+1. Purpose:
+
+ - It tells React what to display in the DOM.
+ - It can include JSX to define the structure and content of the UI.
+
+2. Return Value:
+
+ - The render() method must return a single React element (often a parent element containing child components or elements).
+ - If there is no UI to display, it can return null.
+
+3. Pure Function:
+
+ - The render() method must not modify the component’s state or interact with the browser (e.g., no DOM manipulations or side effects).
+ - It is a pure function of props and state, meaning it re-renders the UI whenever state or props change.
+
+4. React Updates:
+
+ - React automatically calls render() during the initial rendering and whenever the component's state or props are updated.

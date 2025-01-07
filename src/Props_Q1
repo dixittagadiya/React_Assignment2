@@ -1,0 +1,13 @@
+=> What Are Props in React.js?
+Props (short for "properties") are a mechanism for passing data from a parent component to a child component in React. They allow components to be reusable and dynamic by enabling customization of the component's behavior and appearance.
+
+=> Key Features of Props:
+ 1. Read-Only: Props are immutable, meaning they cannot be modified by the child component that receives them.
+ 2. Unidirectional Data Flow: Props are passed from the parent to the child component, ensuring a top-down flow of data.
+ 3. Customizable Components: Props allow you to create dynamic components that change based on the data they receive.
+
+=> How Are Props Different from State?
+
+1. Props: Props are used to pass data to components, Immutable (read-only), Passed from parent to child components, Parent controls props, Used to configure components and share data.
+
+2. State: State is a local data storage mechanism within a component, Mutable (can be updated using setState or useState), Defined and managed within a component, Component controls its state, Used to manage dynamic or changing data within a component.

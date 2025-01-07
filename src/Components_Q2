@@ -1,0 +1,32 @@
+=> To pass data to a component using props in React, you simply include attributes in the JSX tag of the 
+child component and set their values to the desired data. These attributes are then accessible in the child 
+component as properties of the props object.
+
+ => Steps to Pass Data Using Props:
+
+1.  Add attributes to the component tag in the parent component:
+
+<ChildComponent name="John Doe" age={30} />
+Here, name and age are props being passed to ChildComponent.
+
+2. Access the props in the child component: In the child component, you can access the props using the props object or destructuring:
+
+function ChildComponent(props) {
+    return (
+        <div>
+            <p>Name: {props.name}</p>
+            <p>Age: {props.age}</p>
+        </div>
+    );
+}
+
+Or using destructuring:
+
+function ChildComponent({ name, age }) {
+    return (
+        <div>
+            <p>Name: {name}</p>
+            <p>Age: {age}</p>
+        </div>
+    );
+}

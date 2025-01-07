@@ -1,0 +1,45 @@
+=> Types of Components in React
+There are two main types of components in React:
+
+1. Functional Components:
+
+ - These are simple JavaScript functions that take props as an argument and return JSX.
+ - Functional components were originally stateless, but with the introduction of React Hooks (e.g., useState, useEffect), they can now manage state and side effects as well.
+
+Example of a functional component:
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+=> Features of Functional Components:
+
+ - Simpler syntax.
+ - Can use hooks for state and lifecycle features (since React 16.8).
+ - Typically more concise and easier to test.
+
+2. Class Components:
+
+ - These are ES6 classes that extend React.Component and must have a render() method that returns JSX.
+ - Class components were the primary way to manage state and lifecycle methods in earlier versions of React (before React 16.8).
+
+Example of a class component:
+
+class Welcome extends React.Component {
+  render() {
+    return <h1>Hello, {this.props.name}</h1>;
+  }
+}
+
+=> Features of Class Components:
+
+1. Can use state and lifecycle methods like componentDidMount, shouldComponentUpdate, etc.
+2. More verbose compared to functional components.
+3. Some developers prefer class components for their more explicit structure and lifecycle control.
+
+
+=> Key Differences Between Functional and Class Components:
+
+ - Functional Components: Simpler, using functions, Can use React Hooks (e.g., useState), Can use React Hooks (e.g., useEffect), Slightly better due to simplicity (especially before hooks), Ideal for simpler components and UI rendering.
+
+ - Class Components: Manage state using this.state, Built-in lifecycle methods (componentDidMount, etc.), More verbose, especially with state and methods, Slightly slower due to overhead of classes, this is used for state, methods, and props, Legacy, still supported but less recommended. 

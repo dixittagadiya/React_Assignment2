@@ -1,0 +1,9 @@
+=> How Does this.setState() Work?
+1. Triggers a Re-Render:
+ - When this.setState() is called, React merges the new state values with the existing state, then schedules a re-render of the component to update the UI based on the new state.
+
+2. Asynchronous Nature:
+ - this.setState() is asynchronous. React may batch multiple setState calls together to optimize performance. As a result, the updated state may not be immediately reflected after calling this.setState().
+
+3. Merges State Objects:
+ - When using this.setState(), React performs a shallow merge of the new state with the existing state, meaning only the specified properties are updated, and others remain unchanged.
